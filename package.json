@@ -1,0 +1,16 @@
+{
+  "name": "docker-node-redis-app",
+  "version": "1.0.0",
+  "description": "Multi-container app using Node.js and Redis with Docker Compose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Saraswoti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "redis": "^5.5.6"
+  }
+}
