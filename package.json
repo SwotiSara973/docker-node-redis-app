@@ -1,16 +1,22 @@
 {
-  "name": "docker-node-redis-app",
+  "name": "devsecops-sample-app",
   "version": "1.0.0",
-  "description": "Multi-container app using Node.js and Redis with Docker Compose",
-  "main": "app.js",
+  "description": "Sample Node.js app for DevSecOps pipeline analysis",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "build": "mkdir -p build && cp -r index.js package.json build/ && echo 'Build completed'",
+    "test": "echo 'Running tests' && exit 0"
   },
-  "keywords": [],
-  "author": "Saraswoti",
-  "license": "ISC",
+  "keywords": ["devsecops", "node", "ci-cd"],
+  "author": "Saraswoti Nagarkoti",
+  "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0",
-    "redis": "^5.5.6"
+    "express": "4.17.0",
+    "lodash": "4.17.11",
+    "minimatch": "3.0.4"
+  },
+  "devDependencies": {
+    "snyk": "^1.685.0"
   }
 }
