@@ -1,3 +1,4 @@
+# Added DEPLOY_KEY secret in GitHub for deployment step
 name: CI/CD Pipeline for Node.js App
 on:
   push:
